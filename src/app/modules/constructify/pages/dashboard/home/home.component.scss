@@ -1,0 +1,97 @@
+#homeContainer{
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    height: 100%;
+    padding: 50px;
+    .col-3{
+        display: flex;
+    }
+}
+
+#homeHeader{
+    font-size: 24px;
+    color: #0F2C29;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    margin: 3% 1%;
+}
+
+#avatar{
+    height: 90px;
+    width: 90px;
+}
+
+.action-icon{
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.02);
+            background: #C79625; 
+        i{
+            color: #FFD86E;
+        }
+    }
+    i{
+        font-size: 24px;
+        color: #C79625;
+        margin: auto;
+    }
+    background: #FFD86E;
+    box-shadow: 0 10px 20px -10px #FFD86E;
+    min-width: 72px;
+    min-height: 72px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.action-label{
+    margin: 12% auto;
+    font-size: 12px;
+    color: #0F2C29;
+    letter-spacing: 0.2px;
+    width: 50px;
+
+}
+
+.project-card{
+    &:hover{
+        transform: scale(1.01)
+    }
+}
+
+#project-image, #project-image-2{
+    cursor: pointer;
+   
+    span{
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0.23px;
+        margin: 70% 10%;
+    }
+    margin: 15px;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    background: transparent url('../../../../../../assets/images/Cerulean.png') 0% 0% no-repeat padding-box;
+    box-shadow: 0 10px 20px 0px #9EADAB;
+    border-radius: 12px;
+    display: flex;
+}
+
+#project-image-2{
+    background: transparent url('../../../../../../assets/images/Sonrisa.png') 0% 0% no-repeat padding-box;
+}
+
+.inventory-summary{
+font-size: 14px;
+color: #0F2C29;
+letter-spacing: 0.23px;
+    margin: -40px 15px;
+    padding: 50px 15px 10px;
+    width: 180px;
+    height: 105px;
+    background: #FFFFFF;
+    box-shadow: 0 10px 20px -10px #9EADAB;
+    border-radius: 8px;
+}
+
+.progress {height: 8px;margin: 5px 0px;} // we increased it so the text is visible or change font size
+.progress .sr-only { position: relative; }
