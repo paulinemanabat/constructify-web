@@ -1,0 +1,47 @@
+.nav-container{
+    padding: 40px;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 10px 20px -10px #9EADAB;
+    i{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+#nav-header{
+    width: 100px;
+    word-wrap: break-word;
+    font-weight: 800;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    color: #1B6C50;
+    letter-spacing: 4.08px;
+}
+
+.nav-menu{
+    :focus{
+        outline: none;
+    }
+    :hover{
+        color: #C79625;
+    }
+   cursor: pointer;
+    margin: 10px 24px;
+    opacity: 0.5;
+    font-weight: 600;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    color: #0F2C29;
+    letter-spacing: 0.23px;
+}
+
+.active{
+    color: #C79625;
+}
+
+.nav-menu:focus{
+        outline: none;
+}
+
+
