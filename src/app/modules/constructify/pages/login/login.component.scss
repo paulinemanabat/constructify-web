@@ -1,0 +1,84 @@
+#sideBarLogin{
+    padding-right: 30px;
+    text-align: center;
+    height: 100%;
+    background: transparent url('../../../../../assets/images/BG.png') 0% 0% no-repeat padding-box;
+}
+
+#sideBarLabel{
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 4.08px;
+}
+
+#logo{
+    margin: 33% 3%;
+}
+
+#hello-user{
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #004D57;
+    letter-spacing: 0.67px;
+    line-height: 42px;
+}
+
+#welcome-user{
+    font-family: Helvetica;
+    font-size: 18px;
+    color: #0F2C29;
+    letter-spacing: 0.3px;
+}
+
+input, button{
+    width: 297px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px 0px #808C8B;
+    padding: 15px;
+
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    color: #808C8B;
+    letter-spacing: 0.23px;
+}
+
+#loginContainer{
+    position: relative;
+        top: 130px;
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 30px;
+    }
+
+    #avatar{
+        margin: 15px -25px;
+    }
+
+    #loginButton{
+        cursor: pointer;
+        margin: 15px -15px 0px -15px;
+    }
+
+    #loginOptions{
+        a{
+            color: #C79625;
+        }
+        #problem{
+            left: 90px;
+            position: relative;
+        }
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+        font-size: 14px;
+        color: #C79625;
+        margin-top: -10px;
+        font-weight: 600;
+        letter-spacing: 0.23px;
+        text-decoration: underline;
+    }
+}
