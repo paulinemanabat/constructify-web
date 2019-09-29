@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-inventory',
@@ -8,28 +10,40 @@ import { Component, OnInit } from '@angular/core';
 export class InventoryComponent implements OnInit {
 
   title = 'Example of Angular 8 DataTable';
-  dtOptions: DataTables.Settings = {};
-  dtUsers =[
-    {"id": 101, "firstName": "Anil", "lastName": "Singh"},
-    {"id": 102, "firstName": "Reena", "lastName": "Singh"},
-    {"id": 103, "firstName": "Aradhay", "lastName": "Simgh"},
-    {"id": 104, "firstName": "Dilip", "lastName": "Singh"},
-    {"id": 105, "firstName": "Alok", "lastName": "Singh"},
-    {"id": 106, "firstName": "Sunil", "lastName": "Singh"},
-    {"id": 107, "firstName": "Sushil", "lastName": "Singh"},
-    {"id": 108, "firstName": "Sheo", "lastName": "Shan"},
-    {"id": 109, "firstName": "Niranjan", "lastName": "R"},
-    {"id": 110, "firstName": "Lopa", "lastName": "Mudra"},
-    {"id": 111, "firstName": "Paramanand","lastName": "Tripathi"}
+  dtOptions: any = {};
+  // dtOptions: DataTables.Settings = {};
+  dtInventories =[
+    {"id": 10001, "materialName": "Electric Wire", "class": "Electrical", "area": "Guest Lounge", "quantity" : "200", "date":"2019-09-26", "status" : "installed"},
+    {"id": 10001, "materialName": "Wood", "class": "Carpentry", "area": "Kitchen", "quantity" : "100", "date":"2019-09-25", "status" : "installed"},
+    {"id": 10001, "materialName": "Plywood", "class": "Carpentry", "area": "Admin Office", "quantity" : "50", "date":"2019-09-23", "status" : "installed"},
+    {"id": 10001, "materialName": "Metal", "class": "Tinsmithry", "area": "Reception", "quantity" : "100", "date":"2019-09-21", "status" : "installed"},
+    {"id": 10001, "materialName": "PCB", "class": "Plumbing", "area": "Kitchen", "quantity" : "200", "date":"2019-09-21", "status" : "installed"},
+    {"id": 10001, "materialName": "Switch", "class": "Electrical", "area": "Restaurant", "quantity" : "20", "date":"2019-08-20", "status" : "installed"},
+    {"id": 10001, "materialName": "Blue Paint", "class": "Painting", "area": "Restaurant", "quantity" : "50", "date":"2019-08-19", "status" : "installed"},
+    {"id": 10001, "materialName": "Brush", "class": "Painting", "area": "Admin Office", "quantity" : "15", "date":"2019-08-19", "status" : "installed"},
+    {"id": 10001, "materialName": "Nails", "class": "Carpentry", "area": "Guest Lounge", "quantity" : "2000", "date":"2019-08-17", "status" : "installed"},
+    {"id": 10001, "materialName": "Wires", "class": "Electrical", "area": "Reception", "quantity" : "70", "date":"2019-08-10", "status" : "installed"},
+    {"id": 10001, "materialName": "Nails", "class": "Carpentry", "area": "Comfort Room", "quantity" : "700", "date":"2019-08-09", "status" : "installed"},
+    {"id": 10001, "materialName": "Screw", "class": "Carpentry", "area": "Kitchen", "quantity" : "505", "date":"2019-08-05", "status" : "installed"},
+    
   ];
-  constructor() { }
+  constructor(private router: Router) { 
+   
+  }
 
   ngOnInit() {
     this.dtOptions = {
-      data:this.dtUsers,
-      columns: [{title: 'User ID', data: 'id'},
-            {title: 'First Name', data: 'firstName'},
-            {title: 'Last Name', data: 'lastName' }]
+      data:this.dtInventories,
+      columns: [{title: 'Material ID', data: 'id'},
+            {title: 'Material Name', data: 'materialName'},
+            {title: 'Class', data: 'class'},
+            {title: 'Area', data: 'area'},
+            {title: 'Quantity', data: 'quantity'},
+            {title: 'Date', data: 'date'},
+            {title: 'Status', data: 'status' }],
+      dom: 'Bfrtip',
+      
+      buttons: [ 'print', 'excel', 'pdf']
     };
   }
 

@@ -8,6 +8,8 @@ import { NotificationsbarComponent } from './pages/dashboard/notificationsbar/no
 import { HomeComponent } from './pages/dashboard/home/home.component';
 import { InventoryComponent } from './pages/dashboard/inventory/inventory.component';
 import { ProfileComponent } from './pages/dashboard/profile/profile.component';
+import { DataTablesModule } from 'angular-datatables';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { ProfileComponent } from './pages/dashboard/profile/profile.component';
   ],
   imports: [
     CommonModule,
+    DataTablesModule,
     ConstructifyRoutingModule
   ]
 })

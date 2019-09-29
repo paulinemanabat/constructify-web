@@ -1,7 +1,7 @@
 #homeContainer{
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     height: 100%;
-    padding: 50px;
+    padding: 30px 50px;
     .col-3{
         display: flex;
     }
@@ -48,7 +48,7 @@
     color: #0F2C29;
     letter-spacing: 0.2px;
     width: 50px;
-
+    font-weight: 500;
 }
 
 .project-card{
@@ -95,3 +95,26 @@ letter-spacing: 0.23px;
 
 .progress {height: 8px;margin: 5px 0px;} // we increased it so the text is visible or change font size
 .progress .sr-only { position: relative; }
+
+.request-card{
+    span{
+font-size: 14px;
+    }
+    a{
+        cursor: pointer;
+        color: #C79625;
+        font-weight: 600;
+    }
+font-size: 24px;
+color: #0F2C29;
+letter-spacing: 0.23px;
+line-height: 31px;
+    padding: 2% 3%;
+
+    margin: 15px;
+    background: #FFFFFF;
+box-shadow: 0 10px 20px -10px #9EADAB;
+border-radius: 8px;
+width: 335px;
+height: 130px;
+}

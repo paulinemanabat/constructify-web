@@ -7,3 +7,56 @@ html, body
     height: 100%;
     width: 100%;
 }
+
+table{
+    width: 100% !important;
+}
+
+.dt-buttons button{
+    &:hover{
+        box-shadow: 0px 1px 5px #c5c5c5;
+    }
+    border-radius: 6px;
+    padding: 5px 40px;
+    // color: #1B6C50;
+    font-weight: 500;
+    margin-left: 4px;
+    background-color: #fbd473;
+    border: none;
+    // box-shadow: 0px 1px 5px #c5c5c5;
+}
+.dt-buttons{
+    width: 353px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+input{
+    outline: none !important;
+    border-radius: 5px;
+}
+
+input[type='search']{
+    padding: 5px 10px;
+    width: 250px;
+}
+
+.dataTables_filter{
+    float: left !important;
+}
+// .paginate_button .current{
+//     color: #ffffff !important;
+//     border: none !important;
+//     border-radius: 2px !important;
+//     background-color: #215157 !important;
+// }
+
+th{
+    color: #215157;
+
+}
+
+.dataTables_wrapper{
+    margin-top: 30px;
+}
+

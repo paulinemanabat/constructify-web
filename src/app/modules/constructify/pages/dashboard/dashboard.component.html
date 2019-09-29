@@ -5,7 +5,7 @@
   <div class="col">
     <router-outlet></router-outlet>
   </div>
-  <div class="col-3">
+  <div class="col-3" *ngIf="isInventoryActive()">
     <app-notificationsbar></app-notificationsbar>
   </div>
 </div>

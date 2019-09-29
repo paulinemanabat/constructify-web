@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,10 +9,27 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  routerData: any;
+  constructor(private router:Router) { 
+    this.router.events.subscribe((val) => {
+      this.routerData = val;
+  });
+  }
 
   ngOnInit() {
+    
     this.router.navigate(['/dashboard/home']);
+    
+  }
+
+  isInventoryActive(){
+    if (this.routerData.url == '/dashboard/inventory'){
+     
+      return false
+    } else {
+      return true
+    }
+    
   }
 
 }
