@@ -1,4 +1,14 @@
 .notif-container{
+    padding: 15%;
     height: 100%;
     background: #E1E8E8;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    color: #0F2C29;
+    letter-spacing: 0.23px;
+}
+
+#notifs{
+    font-weight: 500;
+    margin-left: 20px;
 }
