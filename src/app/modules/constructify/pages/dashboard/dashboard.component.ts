@@ -23,11 +23,10 @@ export class DashboardComponent implements OnInit {
   }
 
   isInventoryActive(){
-    if (this.routerData.url == '/dashboard/inventory'){
-     
-      return false
-    } else {
+    if (this.routerData.url == '/dashboard/home'){
       return true
+    } else {
+      return false
     }
     
   }
